@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	
+	<definition name=".layout" template="/WEB-INF/layout/layout.jsp">
+		<put-attribute name="nav-content" value="/WEB-INF/jsp/common/asideNavBar.jsp" />
+		<put-attribute name="banner-content" value="/WEB-INF/jsp/common/banner.jsp" />
+		<put-attribute name="pagetitle-content" value=""/>
+		<put-attribute name="list-content" value="" />
+		<put-attribute name="detail-content" value="" />
+		<put-attribute name="footer-content" value="/WEB-INF/jsp/common/footer.jsp" />
+	</definition>
+	
+	<definition name=".loginlayout" template="WEB-INF/layout/loginlayout.jsp">
+	</definition>
+	
+	<definition name="personDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/personTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/personDetail.jsp" />
+	</definition>
+	
+	<definition name="personList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/personTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/personDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/personList.jsp" />
+	</definition>
+	
+	<definition name="contactDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/contactTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/contactDetail.jsp" />
+	</definition>
+	
+	<definition name="contactList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/contactTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/contactDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/contactList.jsp" />
+	</definition>
+	
+	<definition name="userDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/userTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/userDetail.jsp" />
+	</definition>
+	
+	<definition name="userList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/userTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/userDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/userList.jsp" />
+	</definition>
+	
+	<definition name="menuItemDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/menuItemTitle.jsp"/>
+		<put-attribute name="detail-content" value="WEB-INF/jsp/content/menuItemDetail.jsp" />
+	</definition>
+	
+	<definition name="menuItemList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/menuItemTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/menuItemDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/menuItemList.jsp" />
+	</definition>
+	
+	<definition name="linktable" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/linktableTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/linktableDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/linktable.jsp" />
+	</definition>
+	
+	<definition name="clubList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/clubTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/clubDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/clubList.jsp" />
+	</definition>
+	
+	<definition name="clubDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/clubTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/clubDetail.jsp" />
+	</definition>
+	
+	<definition name="profileDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/profileTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/profileDetail.jsp" />
+	</definition>
+	
+	<definition name="profileList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/profileTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/profileDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/profileList.jsp" />
+	</definition>
+	
+	<definition name="permissionDetail" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/permissionTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/permissionDetail.jsp" />
+	</definition>
+	
+	<definition name="permissionList" extends=".layout">
+		<put-attribute name="pagetitle-content" value="/WEB-INF/jsp/pageTitles/permissionTitle.jsp"/>
+		<put-attribute name="detail-content" value="/WEB-INF/jsp/content/permissionDetail.jsp" />
+		<put-attribute name="list-content" value="/WEB-INF/jsp/content/permissionList.jsp" />
+	</definition>
+	
+	<definition name="login" extends=".loginlayout" >
+	</definition>
+	
+</tiles-definitions>

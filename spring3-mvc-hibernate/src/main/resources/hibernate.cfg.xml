@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="pt.link.tutorial.cm.domain.Contact" />
+        <mapping class="pt.link.tutorial.cm.domain.Person" />
+        <mapping class="pt.link.tutorial.cm.domain.Club" />
+        <mapping class="pt.link.tutorial.cm.domain.User" />
+        <mapping class="pt.link.tutorial.cm.domain.MenuItem" />
+        <mapping class="pt.link.tutorial.cm.domain.MenuItensTreeRelation" />
+        <mapping class="pt.link.tutorial.cm.domain.Document" />
+        <mapping class="pt.link.tutorial.cm.domain.Profile" />
+        <mapping class="pt.link.tutorial.cm.domain.Permission" />
+        <mapping class="pt.link.tutorial.cm.domain.User_Roles" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,79 @@
+.error {
+	color: #ff0000;
+	font-style: italic;
+}
+
+.errorBlock {
+	color: #ff0000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+
+
+body {
+	background: #555;
+	padding: 0px;
+}
+
+h1,h2,p {
+	padding: 0px;
+	margin: 0px;
+}
+
+#content {
+	width: 90%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#banner {
+	background: #3B3E37;
+}
+
+#title {
+	background: #665845;
+	h2
+}
+
+#subtitle {
+	background: #9F8158;
+}
+
+#detailRegion {
+	background: #EBC785;
+	width: 40%;
+	height: 80%;
+	float: right;
+	padding: .5%;
+	margin-left: .15%;
+	margin-right: .3%;
+	margin-top: .2%;
+	margin-bottom: .2%;
+}
+
+#listRegion {
+	background: #EBC085;
+	width: 57%;
+	height: 80%;
+	float: left;
+	padding: .5%;
+	margin-left: .3%;
+	margin-right: .15%;
+	margin-top: .2%;
+	margin-bottom: .2%;
+}
+
+#footer {
+	background: #733027;
+	clear: both;
+}
+
+/* Change color dialog header */
+.ui-dialog-titlebar {
+  background-color: #428bca;
+  background-image: none;
+  color: #000;
+}

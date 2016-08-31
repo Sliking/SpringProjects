@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>pt.link.libraries</groupId>
+	<artifactId>pagging-communs</artifactId>
+	<version>1.0.5</version>
+
+	<scm>
+		<developerConnection>scm:svn:http://pssubversion.develop.aitec.pt/svn/Link_JEE-OS_Projects/Libraries/pagging-commons/tags/pagging-communs-1.0.5</developerConnection>
+	</scm>
+	<properties>
+		<maven.javadoc.skip>true</maven.javadoc.skip>
+	</properties>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<tagBase>http://pssubversion.develop.aitec.pt/svn/Link_JEE-OS_Projects/Libraries/pagging-commons/tags</tagBase>
+					</configuration>
+				</plugin>
+				<plugin>
+				   <groupId>org.apache.maven.plugins</groupId>
+				   <artifactId>maven-javadoc-plugin</artifactId>
+					<configuration>
+						<skip>true</skip>
+					</configuration>
+				</plugin>	
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>internal repository</name>
+			<url>http://dstuicdevsup01:9080/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus</id>
+			<name>Link repository</name>
+			<url>http://dstuicdevsup01:9080/nexus/content/repositories/releases</url>
+		</repository>
+	</distributionManagement>
+
+</project>
